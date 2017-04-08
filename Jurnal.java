@@ -14,6 +14,7 @@ public class Jurnal {
 
     
     public static void main(String[] args) {
+        long temp=0;
         Scanner sc = new Scanner(System.in);
         System.out.print("Masukan Jumlah Bilangan Fibonacci : ");
         int n = sc.nextInt();
@@ -24,8 +25,9 @@ public class Jurnal {
             fib[i] = fib[i-1] + fib[i-2];
         }
         for(int i = 0 ; i < n ; i++){
-            System.out.print(fib[i] + " ");
+            temp = fib[i] + temp;
         }
+        System.out.println(temp);
     }
     
 }
